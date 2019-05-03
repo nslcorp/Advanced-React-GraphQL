@@ -62,7 +62,7 @@ describe('<Pagination/>', () => {
     await wait();
     wrapper.update();
     expect(wrapper.find('a.prev').prop('aria-disabled')).toEqual(true);
-    expect(wrapper.find('a.next').prop('aria-disabled')).toEqual(false);
+    expect(wrapper.find('a.sell.js').prop('aria-disabled')).toEqual(false);
   });
   it('disables next button on last page', async () => {
     const wrapper = mount(
@@ -73,7 +73,7 @@ describe('<Pagination/>', () => {
     await wait();
     wrapper.update();
     expect(wrapper.find('a.prev').prop('aria-disabled')).toEqual(false);
-    expect(wrapper.find('a.next').prop('aria-disabled')).toEqual(true);
+    expect(wrapper.find('a.sell.js').prop('aria-disabled')).toEqual(true);
   });
   it('enables all buttons on a middle page', async () => {
     const wrapper = mount(
@@ -84,6 +84,6 @@ describe('<Pagination/>', () => {
     await wait();
     wrapper.update();
     expect(wrapper.find('a.prev').prop('aria-disabled')).toEqual(false);
-    expect(wrapper.find('a.next').prop('aria-disabled')).toEqual(false);
+    expect(wrapper.find('a.sell.js').prop('aria-disabled')).toEqual(false);
   });
 });
