@@ -1,4 +1,4 @@
-//Lesson 12
+
 const { Prisma } = require("prisma-binding");
 
 const db = new Prisma({
@@ -7,3 +7,5 @@ const db = new Prisma({
   secret: process.env.PRISMA_SECRET,
   debug: false
 });
+
+module.exports = db;
